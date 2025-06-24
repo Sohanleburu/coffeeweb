@@ -4,13 +4,13 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB5Db8fXpwNRB0bZPd-pYwRO_bBAl4zuKU",  // <-- use full config from Firebase
-  authDomain: "coffeeweb-b37db.firebaseapp.com",
-  projectId: "coffeeweb-b37db",
-  storageBucket: "coffeeweb-b37db.firebasestorage.app",
-  messagingSenderId: "942924640189",
-  appId: "1:942924640189:web:996bd229121d06b9c8acd4",
-  measurementId: "G-GGRC8707D9"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,  // <-- use full config from Firebase
+  authDomain: process.env.REACT_AUTH_DOMAIN,
+  projectId: process.env.REACT_PROJID,
+  storageBucket: process.env.REACT_SBUCKET,
+  messagingSenderId: process.env.REACT_MSGSENDERID,
+  appId: process.env.REACT_APPID,
+  measurementId: process.env.REACT_MEASUREMENTID
 };
 
 const app = initializeApp(firebaseConfig);
