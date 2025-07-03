@@ -1,0 +1,63 @@
+/* HomePage.css */
+.coffee-home {
+  text-align: center;
+  background: #fdf6f0;
+  color: #4b2e2e;
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.coffee-heading {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.coffee-subtext {
+  font-size: 1.2rem;
+  color: #7b4f39;
+  margin-bottom: 30px;
+}
+
+.coffee-card {
+  display: inline-block;
+  padding: 30px;
+  background: #fff8f3;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(121, 85, 72, 0.2);
+  max-width: 400px;
+}
+
+.coffee-profile {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 2px solid #d3a46f;
+}
+
+.coffee-message {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.coffee-logout-btn {
+  padding: 10px 20px;
+  background: #6f4e37;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.coffee-logout-btn:hover {
+  background: #4e342e;
+}
+
+.coffee-footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #a98274;
+}

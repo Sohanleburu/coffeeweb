@@ -1,3 +1,4 @@
+// App.js
 import React, { useState } from "react";
 import {
   signInWithPopup,
@@ -5,6 +6,7 @@ import {
   createUserWithEmailAndPassword
 } from "firebase/auth";
 import { auth, provider } from "./firebase";
+import HomePage from "./views/HomePage";
 import "./App.css";
 
 function App() {
@@ -38,11 +40,7 @@ function App() {
   return (
     <div className="app">
       {user ? (
-        <div className="user-card">
-          <img src={user.photoURL || "https://via.placeholder.com/90"} alt="Profile" className="profile-pic" />
-          <h2>Welcome, {user.displayName || user.email}!</h2>
-          <button className="login-btn" onClick={logout}>Logout</button>
-        </div>
+        <HomePage user={user} logout={logout} />
       ) : (
         <div className="login-card">
           <h1>CoffeeWeb ☕</h1>
